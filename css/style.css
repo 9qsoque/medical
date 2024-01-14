@@ -1365,6 +1365,10 @@ body {
   background: url("../../img/icons/search.svg") 0px 0/20px 20px no-repeat;
 }
 
+.news__content.blogs {
+  padding: 0 80px 0;
+}
+
 .news__header {
   margin-bottom: 57px;
 }
@@ -1384,4 +1388,12 @@ body {
 .news__articles.main.blogs {
   margin-top: 0px;
   width: 1280px;
+}
+
+.news__more.blogs {
+  margin-top: 40px;
+}
+
+.footer__content.service {
+  padding: 0 80px 0;
 }
