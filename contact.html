@@ -43,7 +43,7 @@
       </header>
       <div class="main__service">
         <div class="main__content services">
-          <div class="main__services blogs">
+          <div class="main__services blogs contact">
             <h1 class="main__title services blogs contacts">
               <span class="underline">Get in touch</span>
               <div class="main__vector blogs">
@@ -55,55 +55,113 @@
           </div>
         </div>
       </div>
-    </main>
     <div class="contacts">
       <div class="contacts__content">
         <div class="contacts__row">
           <div class="contacts__column map">
             <div class="contacts__img">
-              <div class="contacts__address">
+              <div class="contacts__address box">
                 <div class="contacts__box">
-                  <h6>Office Address</h6>
-                  <p>1441 Morris Ave, Union, NJ 07083</p>
+                  <div class="contacts__icon">
+                    <img src="img/icons/icnContact1.svg" alt="" class="contacts__icn">
+                  </div>
+                  <div class="contacts__wrap address">
+                    <h6>Office Address</h6>
+                    <p>1441 Morris Ave, Union, NJ 07083</p>
+                  </div>
                 </div>
               </div>
-              <div class="contacts__time">
+            </div>              
+              <div class="contacts__time box">
                 <div class="contacts__box time">
-                  <div class="contacts__img time">
-                       
+                  <div class="contacts__icon">
+                    <img class="contacts__icn" src="img/icons/icnContact.svg" alt=""> 
                   </div>
                   <div class="contacts__wrap">
                   <h6>Office Timings</h6>
-                  <p>Monday - Saturday (9:00am to 5pm) Sunday (Closed)</p>
+                  <p>Monday - Saturday (9:00am to 5pm) <br> Sunday (Closed)</p>
                   </div>
                 </div>
               </div>
-              <div class="contacts__email">
+              <div class="contacts__email box">
                 <div class="contacts__box email">
-                  <h6>Email Address</h6>
-                  <p>Smile01@gmail.com</p> 
+                  <div class="contacts__icon">
+                    <img src="img/icons/icnContact1.svg" alt="" class="contacts__icn">
+                  </div>
+                  <div class="contacts__wrap">               
+                      <h6>Email Address</h6>
+                      <p>Smile01@gmail.com</p> 
+                  </div>
                 </div>
               </div> 
-              <div class="contacts__phone">
+              <div class="contacts__phone box">
                 <div class="contacts__box phone">
-                  <h6>Phone Number</h6>
-                  <p>0900-78601</p>
+                  <div class="contacts__icon">
+                    <img src="img/icons/icnContact1.svg" alt="" class="contacts__icn">
+                  </div>
+                  <div class="contacts__wrap">                
+                      <h6>Phone Number</h6>
+                      <p>0900-78601</p>
+                  </div>
                 </div>
-              </div>
-              <div class="contacts__chat">
+              </div> 
+              <div class="contacts__chat box">
                 <div class="contacts__box chat">
-                  <h6>Live chat</h6>
-                  <p>+1-2064512559</p>
+                  <div class="contacts__icon">
+                    <img src="img/icons/icnContact1.svg" alt="" class="contacts__icn">
+                  </div>
+                  <div class="contacts__wrap">               
+                      <h6>Live chat</h6>
+                      <p>+1-2064512559</p>
+                  </div> 
                 </div>
-              </div>                            
-            </div>
+              </div>                              
           </div>
           <div class="contacts__column form">
-            
+            <form action="#" method="post" class="contacts__form">
+              <div class="contacts__name">
+                <div class="contacts__row">
+                  <label>
+                    <span>First name</span>
+                    <input type="text" id="firstName" class="contacts__input first contact" placeholder="First name">
+                  </label>
+                  <label>
+                    <span>Last name</span>
+                    <input type="text" id="lastName" class="contacts__input contact" placeholder="Last name">
+                  </label>
+                </div>
+                <label>
+                  <span>Email</span>
+                  <input type="text" id="email" class="contacts__input contact" placeholder="you@company.com">
+                </label>
+                <label>
+                  <span>Phone number</span>
+                  <div class="wadwa">
+                  <select class="contacts__select" name="region" id="region">
+                    <option value="us" selected>US</option>
+                    <option value="uk">UK</option>
+                    <option value="ru">RU</option>
+                    <option value="kg">KG</option>
+                  </select>
+                  <input type="number" id="phone" class=" contact phone" placeholder="+1 (555) 000-0000">
+                </div>
+                </label>
+                <label>
+                  <span>Select date</span>
+                  <input type="date" id="date" class="contacts__input contact" placeholder="">
+                </label>
+                <label>
+                  <span>Message</span>
+                  <input type="text" id="email" class="contacts__input contact message">
+                </label>
+              </div>
+              <button class="contacts__btn btn" type="submit"><span class="contacts__button button">Book an appoitment</span></button>
+            </form>
           </div>
         </div>
       </div>
     </div>
+        </main>
       <div class="faq">
         <div class="faq__wrapper">
           <div class="faq__content">
