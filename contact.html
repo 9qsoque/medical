@@ -29,11 +29,11 @@
             </nav>
             <div class="header__book">
               <div class="header__ava">
-                <a href="#">
+                <a href="login.html">
                   <img src="img/icons/ava1.png" alt="">
                 </a>
               </div>
-              <a href="#">
+              <a href="contact.html">
                 <span class="header__btn btn">
                   <span class="header__button button">Book Now</span>
                 </span>
@@ -148,12 +148,12 @@
                 </label>
                 <label>
                   <span>Select date</span>
-                  <input type="date" id="date" class="contacts__input contact" placeholder="">
+                  <input type="text" placeholder="December-02-2022" onfocus="this.type='date'" id="date" class="contacts__input contact date">
                 </label>
                 <label>
                   <span>Message</span>
-                  <input type="text" id="email" class="contacts__input contact message">
-                </label>
+                  <textarea type="text" id="email" class="contacts__input contact message">
+                </textarea>
               </div>
               <button class="contacts__btn btn" type="submit"><span class="contacts__button button">Book an appoitment</span></button>
             </form>

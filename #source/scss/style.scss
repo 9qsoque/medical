@@ -368,7 +368,6 @@ span.underline{
 	border-radius: 10px;
 	border: 1px solid #CECECE;
 	background:  #FFF;
-	font-size: 20px;
 	padding: 0 0 5px 34px;
 }
 .form__submit{
@@ -994,6 +993,7 @@ text-align: center;
 }
 .case{
 	width: 1440px;
+	flex-shrink: 0;
 }
 .main.services{
 	background: linear-gradient(180deg, #E6F6FE 0.58%, rgba(235, 248, 254, 0.00) 98.6%);
@@ -1493,6 +1493,7 @@ text-align: center;
 }
 .contacts__name {
 	width: 498px;
+	margin-bottom: 32px;
 }
 .contacts__row {
 }
@@ -1525,9 +1526,6 @@ text-align: center;
 .contacts__select {
 
 }
-option {
-text-align: left;
-}
 .contacts__select span{
 	color: #011632;
 font-size: 16px;
@@ -1536,27 +1534,265 @@ line-height: 155%;
 letter-spacing: 0.24px;
 }
 .contacts__select{
-
 }
 select{
-
-background: #FFF;
-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-border: none;
-padding: 12px 12px 12px 16px;
+	background: #FFF;
+	box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+	border: none;
+	padding: 12px 12px 12px 16px;
 }
 .wadwa{
 	overflow: hidden;
 	border-radius: 10px;
-border: 1px solid  #D0D5DD;
-background:  #FFF;
-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-	
+	border: 1px solid  #D0D5DD;
+	background:  #FFF;
+	box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+	margin-bottom: 12px;
 }
-.message {}
-.contacts__btn {
-	
+option {
+}
+.contacts__input.date{
+	color: #667085;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 155%;
+	letter-spacing: 0.28px;
+}
+.contacts__input.message {
+	width: 100%;
+	height:	185px;
+	margin: 0;
+	padding: 10px 14px;
+	resize: none;
+}
+// input[type="text"] {
+// 	color: #CFCFCF;
+
+// /* B2/Regular */
+// font-family: General Sans;
+// font-size: 16px;
+// font-style: normal;
+// font-weight: 400;
+// line-height: 155%; /* 24.8px */
+// letter-spacing: 0.24px;
+// }
+textarea{
+	color: #667085;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 155%;
+	letter-spacing: 0.28px;
+}
+input{
+color: #667085;
+font-size: 16px;
+font-weight: 400;
+line-height: 155%;
+letter-spacing: 0.28px;
+}
+.contacts input{
+color: #667085;
+font-size: 14px;
+font-weight: 400;
+line-height: 155%;
+letter-spacing: 0.28px;
+}
+.contacts__btn.btn {
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
 }
 .btn {}
-.contacts__button {}
+.contacts__button.button {
+	margin: 0;
+	padding: 15px 30px;
+	color:  #FFF;
+	font-size: 16px;
+font-weight: 600;
+line-height: 155%;
+letter-spacing: 0.24px;
+}
 .button {}
+
+.case.login{
+	// padding-bottom: 10px;
+}
+.main.login{
+	background: #FFF;
+}
+.header__content.login{
+	background: #E6F6FE;
+}
+.login__case {
+	margin-top: 40px;
+}
+.login__row {
+	display: flex;
+}
+.login__img {
+	position: relative;
+	background: url('../img/loginBg.png') center/contain no-repeat;
+	border-radius: 10px;
+	width: 710px;
+	height: 860px;
+	margin-right: 128px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.login__quote {
+	margin: 0px 87px 73px;
+}
+.login__quote q{
+	color: #FFF;
+	font-size: 24px;
+	line-height: 120%; 
+	text-transform: capitalize;
+}
+.login__quote p:nth-child(1){
+	margin-bottom: 5px;
+}
+.login__quote p:nth-child(2){
+	margin-bottom: 20px;
+}
+.login__quote cite{
+	color: #FFF;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 120%;
+	text-transform: capitalize;
+	font-style: normal;
+}
+.login__quote span{
+	color: #FFF;
+	font-size: 18px;
+	line-height: 155%;
+	letter-spacing: 0.27px;
+}
+.login__form{
+	margin: auto 0;
+	max-width: 414px;
+}
+.login__label {
+
+}
+.label {}
+.login__text {
+	color: #3C4959;
+	font-size: 16px;
+	line-height: 155%;
+	letter-spacing: 0.24px;
+	margin: 8px 0px 37px;
+}
+.login__google {
+	border-radius: 10px;
+	border: 1px solid  #011632;
+	background:	#FFF;
+	padding: 19px 128px 19px 156px;
+}
+.login__container{
+	margin-bottom: 35px;
+}
+.login__google span:before{
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: -35px;
+	background: url('../img/icons/loginGoogle.png') center / cover no-repeat;
+	width: 28px;
+	height: 28px;
+}
+.login__google span{
+	position: relative;
+	color: #011632;
+	text-align: center;
+	font-weight: 500;
+	line-height: 155%;
+	letter-spacing: 0.28px;
+}
+.login__or.text {
+	text-align: center;
+	margin-bottom: 25px;
+	position: relative;
+}
+.login__or:before{
+	background: #011632;
+	content: "";
+	top: 50%;
+	left: 0;
+	position: absolute;
+	width: 188px;
+	height: 0.5px;
+}
+.login__or:after{
+	background: #011632;
+	content: "";
+	top: 50%;
+	right: 4px;
+	position: absolute;
+	width: 184px;
+	height: 0.5px;
+}
+.form__input {
+	padding: 0 0 0 20px;
+	// padding: 21px 260px 17px 20px;
+}
+.form__input.login{
+	width: 100%;
+	margin-bottom: 24px;
+}
+.form__input.mail::placeholder{
+	padding-left: 30px;
+	color: #AFAFAF;
+	font-size: 16px;
+	line-height: 155%; 
+	background: url('../img/icons/loginIcn.svg') 0px 0/ 20px 20px no-repeat;
+}
+.form__input.pass::placeholder{
+	padding-left: 30px;
+	color: #AFAFAF;
+	font-size: 16px;
+	line-height: 155%; 
+	background: url('../img/icons/loginIcn2.svg') 0px 0/ 20px 20px no-repeat;
+}
+.psw {
+	text-decoration: underline;
+	color: #011632;
+}
+.login__me{
+	display: flex;
+	justify-content: space-between;
+
+}
+.login__btn {
+	width: 100%;
+	margin: 20px 0;
+}
+.btn {}
+.login__create{
+	text-align: center;
+}
+.login__create span{
+	color: #011632;
+	font-weight: 500;
+}
+.login__button {}
+.button {}
+.login__img.sign{
+	height: 882px;
+	background: url('../img/signImg.png') center/contain no-repeat;
+}
+.form__input.username::placeholder{
+	padding-left: 30px;
+	color: #AFAFAF;
+	font-size: 16px;
+	line-height: 155%; 
+	background: url('../img/icons/signIcn.svg') 0px 0/ 20px 20px no-repeat;
+}
+.login__me.sign span{
+	padding-left: 10px;
+}
+.login__create.sign span{
+	text-decoration: underline;
+	font-weight: normal;
+}
