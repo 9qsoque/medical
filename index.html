@@ -9,8 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="css/itc-slider.css"> -->
-  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
   <div class="wrapper">
@@ -269,56 +268,78 @@
           <p class="doctors__text text">
             We use only the best quality materials on the market in order to provide the best products to our patients.
           </p>
-          <div class="doctors__review">
-            <div class="doctors__info info">
-              <div class="doctors__box">
-                <div class="doctors__name name">
-                  Jim Carry
+          <div class="swiper mySwiper">
+            <div class="doctors__review swiper-wrapper">
+              <div class="doctors__info info swiper-slide">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Jim Carry
+                  </div>
+                  <div class="doctors__prof prof">
+                    Orthodontist.
+                  </div>
                 </div>
-                <div class="doctors__prof prof">
-                  Orthodontist.
+              </div>
+              <div class="doctors__info info swiper-slide">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Wade Warren
+                  </div>
+                  <div class="doctors__prof prof">
+                    Endodontist.
+                  </div>
+                </div>
+              </div>
+              <div class="doctors__info info swiper-slide">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Jenny Wilson
+                  </div>
+                  <div class="doctors__prof prof">
+                    Periodontist.
+                  </div>
+                </div>
+              </div>
+              <div class="doctors__info info swiper-slide">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Jacob Jones
+                  </div>
+                  <div class="doctors__prof prof">
+                    Pediatric Dentist.
+                  </div>
+                </div>
+              </div>
+
+                            <div class="doctors__info info swiper-slide">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Jacob Jones
+                  </div>
+                  <div class="doctors__prof prof">
+                    Pediatric Dentist.
+                  </div>
+                </div>
+              </div>
+                            <div class="doctors__info info swiper-slide">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Jacob Jones
+                  </div>
+                  <div class="doctors__prof prof">
+                    Pediatric Dentist.
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="doctors__info info">
-              <div class="doctors__box">
-                <div class="doctors__name name">
-                  Wade Warren
-                </div>
-                <div class="doctors__prof prof">
-                  Endodontist.
-                </div>
-              </div>
-            </div>
-            <div class="doctors__info info">
-              <div class="doctors__box">
-                <div class="doctors__name name">
-                  Jenny Wilson
-                </div>
-                <div class="doctors__prof prof">
-                  Periodontist.
-                </div>
-              </div>
-            </div>
-            <div class="doctors__info info">
-              <div class="doctors__box">
-                <div class="doctors__name name">
-                  Jacob Jones
-                </div>
-                <div class="doctors__prof prof">
-                  Pediatric Dentist.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="doctors__scroll">
-            <a class="doctors__prev ar" onclick="plusSlideq(-1)">
+            <div class="doctors__scroll">
+            <div class="doctors__prev swiper-button-prev1 ar" >
               <img class="doctors__arrow" src="img/icons/arrow-left.png" alt="">
-            </a>
-            <a class="doctors__next ar" onclick="plusSlideq(1)">
+            </div>
+            <div class="doctors__next swiper-button-next1 ar">
               <img class="doctors__arrow" src="img/icons/arrow-right.png" alt="">
-            </a>
-          </div>
+            </div>
+            </div>
         </div>
       </div>
       <div class="review">
@@ -329,16 +350,16 @@
           <p class="review__text1 text">
             We use only the best quality materials on the market in order to provide the best products to our patients.
           </p>
-          <div class="review__bg">
-            <div class="review__articles">
-              <article class="review__article">
+          <div class="review__bg swiper mySwiperRev">
+            <div class="review__articles swiper-wrapper">
+              <article class="review__article swiper-slide">
                 <div class="review__header">
                   <div class="review__photo">
                     <img class="review__avatar" src="img/icons/avatar.png" alt="">
                   </div>
                   <div class="review__info">
                     <h3 class="review__name">
-                      Thomas daniel
+                      Thomas Daniel
                     </h3>
                     <div class="review__stars">
                       
@@ -349,7 +370,7 @@
                   Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.
                 </p>
               </article>
-              <article class="review__article">
+              <article class="review__article swiper-slide">
                 <div class="review__header">
                   <div class="review__photo">
                     <img class="review__avatar" src="img/icons/avatar2.png" alt="">
@@ -367,7 +388,7 @@
                   Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.
                 </p>
               </article>
-              <article class="review__article">
+              <article class="review__article swiper-slide">
                 <div class="review__header">
                   <div class="review__photo">
                     <img class="review__avatar" src="img/icons/avatar3.png" alt="">
@@ -385,15 +406,33 @@
                   Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.
                 </p>
               </article>
+               <article class="review__article swiper-slide">
+                <div class="review__header">
+                  <div class="review__photo">
+                    <img class="review__avatar" src="img/icons/avatar3.png" alt="">
+                  </div>
+                  <div class="review__info">
+                    <h3 class="review__name">
+                      Thomas Daniel
+                    </h3>
+                    <div class="review__stars">
+                      
+                    </div>
+                  </div>
+                </div>
+                <p class="review__text">
+                  Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.
+                </p>
+              </article>
             </div>
           </div>
           <div class="review__scroll">
-            <a class="review__prev ar1" onclick="plusSlides(-1)">
+            <div class="review__prev ar1 swiper-button-prev-rev">
               <img class="review__arrow" src="img/icons/arrowLeft.png" alt="">
-            </a>
-            <a class="review__next ar1" onclick="plusSlides(1)">
+            </div>
+            <div class="review__next ar1 swiper-button-next-rev">
               <img class="review__arrow" src="img/icons/arrowRight.png" alt="">
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -414,8 +453,8 @@
             </a>
           </div>
           <div class="news__articles">
-            <div class="news__row">
-              <article class="news__column">
+            <div class="news__row home">
+              <article class="news__column home">
                 <a href="blogs.html">
                   <div class="news__wrapper">
                     <div class="news__img">
@@ -437,7 +476,7 @@
                   </div>
                 </a>
               </article>
-              <article class="news__column">
+              <article class="news__column home">
                 <a href="blogs.html">
                   <div class="news__wrapper">
                     <div class="news__img">
@@ -459,7 +498,7 @@
                   </div>
                 </a>
               </article>
-              <article class="news__column">
+              <article class="news__column home">
                 <a href="blogs.html">
                   <div class="news__wrapper">
                     <div class="news__img">
@@ -481,7 +520,7 @@
                   </div>
                 </a>
               </article>
-              <article class="news__column">
+              <article class="news__column home">
                 <a href="blogs.html">
                   <div class="news__wrapper">
                     <div class="news__img">
@@ -503,7 +542,7 @@
                   </div>
                 </a>
               </article>
-              <article class="news__column">
+              <article class="news__column home">
                 <a href="blogs.html">
                   <div class="news__wrapper">
                     <div class="news__img">
@@ -525,7 +564,7 @@
                   </div>
                 </a>
               </article>
-              <article class="news__column">
+              <article class="news__column home">
                 <a href="blogs.html">
                   <div class="news__wrapper">
                     <div class="news__img">
@@ -547,7 +586,7 @@
                   </div>
                 </a>
               </article>
-              <article class="news__column">
+              <article class="news__column home">
                 <a href="blogs.html">
                   <div class="news__wrapper">
                     <div class="news__img">
@@ -569,7 +608,7 @@
                   </div>
                 </a>
               </article>
-              <article class="news__column">
+              <article class="news__column home">
                 <a href="blogs.html">
                   <div class="news__wrapper">
                     <div class="news__img">
@@ -604,38 +643,44 @@
           </div>
         </div>
       </div>
-
-      <!-- toggle -->
-      <div class="accordionWrapper">
-<div class="accordionItem open">
-      <h2 class="accordionItemHeading">About accordions</h2>
-      <div class="accordionItemContent">
-        <p>JavaScript accordions let you squeeze a lot of content into a small space in a Web page.</p>
-        <p>This simple accordion degrades gracefully in browsers that don't support JavaScript or CSS.</p>
+      <div class="faq">
+        <div class="faq__wrapper">
+          <div class="faq__content">
+            <h2 class="faq__label label">
+              <span class="underline">Frequently Ask Question</span>
+            </h2>
+            <p class="faq__text text">
+              We use only the best quality materials on the market in order to provide the best products to our patients.
+            </p>
+            <div class="faq__questions">
+              <div class="faq__item open">
+                <h6 class="faq__heading"> Can I see who reads my email campaigns?</h6>
+                <p class="faq__answer">
+                  Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.
+                </p>
+              </div>
+              <div class="faq__item close">
+                <h6 class="faq__heading"> Do you offer non-profit discounts?</h6>
+                <p class="faq__answer">
+                  Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.
+                </p>
+              </div>
+              <div class="faq__item close">
+                <h6 class="faq__heading"> Can I see who reads my email campaigns?</h6>
+                <p class="faq__answer">
+                  Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.
+                </p>
+              </div>
+              <div class="faq__item close">
+                <h6 class="faq__heading"> Can I see who reads my email campaigns?</h6>
+                <p class="faq__answer">
+                  Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.
+                </p>
+              </div>                                        
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="accordionItem close">
-      <h2 class="accordionItemHeading">Accordion items</h2>
-      <div class="accordionItemContent">
-        <p>A JavaScript accordion is made up of a number of expandable/collapsible items. Only one item is ever shown at a time.</p>
-        <p>You can include any content you want inside an accordion item. Here's a bullet list:</p>
-        <ul>
-          <li>List item #1</li>
-          <li>List item #2</li>
-          <li>List item #3</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="accordionItem close">
-      <h2 class="accordionItemHeading">How to use a JavaScript accordion</h2>
-      <div class="accordionItemContent">
-        <p>Click an accordion item's heading to expand it. To collapse the item, click it again, or click another item heading.</p>
-      </div>
-    </div>
-</div> 
-    <!-- toggle -->
       <div class="website">
         <!-- <div class="container"> -->
           <div class="website__content">
@@ -671,11 +716,11 @@
               <img src="img/icons/group.png" alt="">
             </div>
             <nav class="footer__nav">
-              <a class="footer__items" href="#">Home</a>
-              <a class="footer__items" href="#">Services</a>
-              <a class="footer__items" href="#">Blogs</a>
-              <a class="footer__items" href="#">About</a>
-              <a class="footer__items" href="#">Contact</a>
+              <a class="footer__items" href="index.html">Home</a>
+              <a class="footer__items" href="services.html">Services</a>
+              <a class="footer__items" href="blogs.html">Blogs</a>
+              <a class="footer__items" href="about.html">About</a>
+              <a class="footer__items" href="contact.html">Contact</a>
             </nav>
           </div>
           <div class="footer__links">
@@ -703,5 +748,7 @@
         </div>
     </footer>
   </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -9,8 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/itc-slider.css">
-  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
   <div class="case">
@@ -57,84 +56,106 @@
             </form>
           </div>
           <div class="main__wrap">
-            <div class="news__articles main blogs">
-              <div class="news__row blogs">
-                <article class="news__column blogs">
+            <div class="news__articles main blogs swiper mySwiperBlogs">
+              <div class="news__row swiper-wrapper">
+                <article class="news__column swiper-slide">
                   <div class="news__wrapper blogs">
                     <div class="news__img">
-                      <img src="img/articleb1.png" alt="">
+                      <img src="img/blogsImg1.png" alt="">
                     </div>
-                    <a href="#">
-                      <span class="news__btn blogs">
+                    <div class="news__case">
+                      <div class="news__btn blogs">
                         <span class="news__button">Self Care
                         </span>
-                      </span>
-                    </a>
+                      </div>
+                      <footer class="news___author">
+                          ~Anita Jackson
+                      </footer>
+                      </div>                     
                     <h3 class="news__label">
                       Care of your Teeth
                     </h3>
-                    <p class="news__text">
+                    <p class="news__text blogs">
                       Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <footer class="news___author">
-                      ~Anita Jackson
-                    </footer>
                   </div>
                 </article>
-                <article class="news__column blogs">
+                <article class="news__column swiper-slide">
                   <div class="news__wrapper blogs">
                     <div class="news__img">
-                      <img src="img/articleb2.png" alt="">
+                      <img src="img/blogsImg.png" alt="">
                     </div>
-                    <a href="#">
-                      <span class="news__btn blogs">
+                    <div class="news__case">
+                      <div class="news__btn blogs">
                         <span class="news__button">Self Care
                         </span>
-                      </span>
-                    </a>
+                      </div>
+                      <footer class="news___author">
+                          ~Anita Jackson
+                      </footer>
+                      </div>                     
                     <h3 class="news__label">
                       Care of your Teeth
                     </h3>
-                    <p class="news__text">
+                    <p class="news__text blogs">
                       Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <footer class="news___author">
-                      ~Anita Jackson
-                    </footer>
                   </div>
                 </article>
-                <article class="news__column blogs">
+                <article class="news__column swiper-slide">
                   <div class="news__wrapper blogs">
                     <div class="news__img">
-                      <img src="img/articleb3.png" alt="">
+                      <img src="img/blogsImg3.png" alt="">
                     </div>
-                    <a href="#">
-                      <span class="news__btn blogs">
+                    <div class="news__case">
+                      <div class="news__btn blogs">
                         <span class="news__button">Self Care
                         </span>
-                      </span>
-                    </a>
+                      </div>
+                      <footer class="news___author">
+                          ~Anita Jackson
+                      </footer>
+                      </div>                     
                     <h3 class="news__label">
                       Care of your Teeth
                     </h3>
-                    <p class="news__text">
+                    <p class="news__text blogs">
                       Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <footer class="news___author">
-                      ~Anita Jackson
-                    </footer>
+                  </div>
+                </article>
+                <article class="news__column swiper-slide">
+                  <div class="news__wrapper blogs">
+                    <div class="news__img">
+                      <img src="img/blogsImg.png" alt="">
+                    </div>
+                    <div class="news__case">
+                      <div class="news__btn blogs">
+                        <span class="news__button">Self Care
+                        </span>
+                      </div>
+                      <footer class="news___author">
+                          ~Anita Jackson
+                      </footer>
+                      </div>                     
+                    <h3 class="news__label">
+                      Care of your Teeth
+                    </h3>
+                    <p class="news__text blogs">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </p>
                   </div>
                 </article>
               </div>
             </div>
-            <div class="review__scroll blogs">             
-              <a class="review__prev ar1" onclick="plusSlides(-1)">
-                <img class="review__arrow" src="img/icons/arrowLeft.png" alt="">
-              </a>              
-              <a class="review__next ar1" onclick="plusSlides(1)">                
-                <img class="review__arrow" src="img/icons/arrowRight.png" alt="">
-              </a>
+          <div class="review__scroll blogs">
+            <div class="review__prev ar1 swiper-button-prev-rev1">
+              <img class="review__arrow" src="img/icons/arrowLeft.png" alt="">
             </div>
+            <div class="review__next ar1 swiper-button-next-rev">
+              <img class="review__arrow" src="img/icons/arrowRight.png" alt="">
+            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -373,10 +394,30 @@
               We use only the best quality materials on the market in order to provide the best products to our patients.
             </p>
             <div class="faq__questions">
-              <div class="faq__ques"></div>
-              <div class="faq__ques"></div>
-              <div class="faq__ques"></div>
-              <div class="faq__ques"></div>
+              <div class="faq__item open">
+                <h6 class="faq__heading"> Can I see who reads my email campaigns?</h6>
+                <p class="faq__answer">
+                  Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.
+                </p>
+              </div>
+              <div class="faq__item close">
+                <h6 class="faq__heading"> Do you offer non-profit discounts?</h6>
+                <p class="faq__answer">
+                  Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.
+                </p>
+              </div>
+              <div class="faq__item close">
+                <h6 class="faq__heading"> Can I see who reads my email campaigns?</h6>
+                <p class="faq__answer">
+                  Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.
+                </p>
+              </div>
+              <div class="faq__item close">
+                <h6 class="faq__heading"> Can I see who reads my email campaigns?</h6>
+                <p class="faq__answer">
+                  Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.
+                </p>
+              </div>                                        
             </div>
           </div>
         </div>
@@ -447,5 +488,7 @@
         </div>
       </footer>
   </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

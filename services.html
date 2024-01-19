@@ -9,8 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/itc-slider.css">
-  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
   <div class="case">
@@ -242,56 +241,79 @@
           <p class="doctors__text text">
             We use only the best quality materials on the market in order to provide the best products to our patients.
           </p>
-          <div class="doctors__review service">
-            <div class="doctors__info info service">
-              <div class="doctors__box">
-                <div class="doctors__name name">
-                  Jim Carry
+          <div class="swiper mySwiper">
+            <div class="doctors__review swiper-wrapper">
+              <div class="doctors__info info swiper-slide">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Jim Carry
+                  </div>
+                  <div class="doctors__prof prof">
+                    Orthodontist.
+                  </div>
                 </div>
-                <div class="doctors__prof prof">
-                  Orthodontist.
+              </div>
+              <div class="doctors__info info swiper-slide">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Wade Warren
+                  </div>
+                  <div class="doctors__prof prof">
+                    Endodontist.
+                  </div>
+                </div>
+              </div>
+              <div class="doctors__info info swiper-slide">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Jenny Wilson
+                  </div>
+                  <div class="doctors__prof prof">
+                    Periodontist.
+                  </div>
+                </div>
+              </div>
+              <div class="doctors__info info swiper-slide">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Jacob Jones
+                  </div>
+                  <div class="doctors__prof prof">
+                    Pediatric Dentist.
+                  </div>
+                </div>
+              </div>
+
+                            <div class="doctors__info info swiper-slide">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Jacob Jones
+                  </div>
+                  <div class="doctors__prof prof">
+                    Pediatric Dentist.
+                  </div>
+                </div>
+              </div>
+                            <div class="doctors__info info swiper-slide">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Jacob Jones
+                  </div>
+                  <div class="doctors__prof prof">
+                    Pediatric Dentist.
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="doctors__info info service">
-              <div class="doctors__box">
-                <div class="doctors__name name">
-                  Wade Warren
-                </div>
-                <div class="doctors__prof prof">
-                  Endodontist.
-                </div>
-              </div>
-            </div>
-            <div class="doctors__info info service">
-              <div class="doctors__box">
-                <div class="doctors__name name">
-                  Jenny Wilson
-                </div>
-                <div class="doctors__prof prof">
-                  Periodontist.
-                </div>
-              </div>
-            </div>
-            <div class="doctors__info info service">
-              <div class="doctors__box">
-                <div class="doctors__name name">
-                  Jacob Jones
-                </div>
-                <div class="doctors__prof prof">
-                  Pediatric Dentist.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="doctors__scroll">
-            <a class="doctors__prev ar" onclick="plusSlideq(-1)">
+            <div class="doctors__scroll">
+            <div class="doctors__prev swiper-button-prev1 ar" >
               <img class="doctors__arrow" src="img/icons/arrow-left.png" alt="">
-            </a>
-            <a class="doctors__next ar" onclick="plusSlideq(1)">
+            </div>
+            <div class="doctors__next swiper-button-next1 ar">
               <img class="doctors__arrow" src="img/icons/arrow-right.png" alt="">
-            </a>
-          </div>
+            </div>
+            </div>
+        </div>
         </div>
       </div>
       <div class="faq">
@@ -304,10 +326,30 @@
               We use only the best quality materials on the market in order to provide the best products to our patients.
             </p>
             <div class="faq__questions">
-              <div class="faq__ques"></div>
-              <div class="faq__ques"></div>
-              <div class="faq__ques"></div>
-              <div class="faq__ques"></div>
+              <div class="faq__item open">
+                <h6 class="faq__heading"> Can I see who reads my email campaigns?</h6>
+                <p class="faq__answer">
+                  Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.
+                </p>
+              </div>
+              <div class="faq__item close">
+                <h6 class="faq__heading"> Do you offer non-profit discounts?</h6>
+                <p class="faq__answer">
+                  Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.
+                </p>
+              </div>
+              <div class="faq__item close">
+                <h6 class="faq__heading"> Can I see who reads my email campaigns?</h6>
+                <p class="faq__answer">
+                  Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.
+                </p>
+              </div>
+              <div class="faq__item close">
+                <h6 class="faq__heading"> Can I see who reads my email campaigns?</h6>
+                <p class="faq__answer">
+                  Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.
+                </p>
+              </div>                                        
             </div>
           </div>
         </div>
@@ -378,5 +420,7 @@
         </div>
       </footer>
   </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

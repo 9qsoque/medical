@@ -24,6 +24,8 @@
 //   }
 //   slides[slideIndex-1].style.display = "block";
 // }
+
+
     var accItem = document.getElementsByClassName('accordionItem');
     var accHD = document.getElementsByClassName('accordionItemHeading');
     for (i = 0; i < accHD.length; i++) {
@@ -38,3 +40,17 @@
             this.parentNode.className = 'accordionItem open';
         }
     }
+
+    /*slider*/
+            var swiper = new Swiper(".mySwiper", {
+                  rewind: true,
+      slidesPerView: 3.05,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+            navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
