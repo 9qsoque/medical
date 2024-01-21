@@ -16,7 +16,7 @@
     /*slider*/
       var swiper = new Swiper(".mySwiper", {
                   rewind: true,
-      slidesPerView: 4.3,
+      slidesPerView: 4,
             navigation: {
         nextEl: ".swiper-button-next1",
         prevEl: ".swiper-button-prev1",
