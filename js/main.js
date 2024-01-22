@@ -30,7 +30,7 @@
         nextEl: ".swiper-button-next-rev",
         prevEl: ".swiper-button-prev-rev",
       },
-      allowTouchMove:false
+      allowTouchMove:false,
     });
       var swiper = new Swiper(".mySwiperBlogs", {
                   rewind: true,
@@ -41,3 +41,10 @@
       },
       allowTouchMove:false
     });
+
+      const burger = document.querySelector('.header__burger');
+      const slide = document.querySelector('.header__slide');
+
+      burger.addEventListener('click', () => {
+        slide.classList.toggle('disp');
+      });

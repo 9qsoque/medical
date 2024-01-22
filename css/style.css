@@ -105,6 +105,7 @@ body {
 }
 
 .header__content {
+  border-radius: 10px;
   background: #E6F6FE;
   padding: 15px 41px;
   display: -webkit-box;
@@ -116,6 +117,28 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__burger {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.block {
+  display: block;
+}
+
+.header__slide {
+  position: absolute;
+}
+
+.disp {
+  display: none;
 }
 
 .header__items {
@@ -177,7 +200,6 @@ body {
 
 .main__column {
   max-width: 687px;
-  margin-top: 56px;
   position: absolute;
   top: 1%;
   left: 1%;
@@ -326,10 +348,6 @@ span.underline {
   padding-right: 23px;
 }
 
-.main__photo1 {
-  margin-right: 40px;
-}
-
 .offers__row {
   width: 100%;
   border-radius: 10px;
@@ -342,20 +360,16 @@ span.underline {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 24px;
   padding: 50px 35px;
 }
 
 .offers__column {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
+      -ms-flex: 1 1 33.3333%;
+          flex: 1 1 33.3333%;
   background-color: #fff;
   border-radius: 10px;
-  height: 100%;
 }
 
 .offers__case {
@@ -432,11 +446,14 @@ span.underline {
   display: flex;
   margin-top: 120px;
   margin-bottom: 151px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .form__column {
   max-width: 531px;
-  margin-right: 218px;
+  margin-right: 70px;
 }
 
 .label {
@@ -521,12 +538,6 @@ span.underline {
   font-weight: 600;
   line-height: 155%;
   text-transform: capitalize;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   border-radius: 0px 10px 10px 0px;
   background: #1376F8;
 }
@@ -566,9 +577,13 @@ span.underline {
 }
 
 .book__column {
-  border: 5px solid;
-  width: 40%;
-  max-height: 444px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 414px;
+  height: 444px;
 }
 
 .book__img {
@@ -578,7 +593,10 @@ span.underline {
 }
 
 .book__column2 {
-  margin-left: 128px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 30px;
   max-width: 522px;
 }
 
@@ -638,8 +656,12 @@ span.underline {
           justify-content: space-between;
 }
 
+.smile__column {
+  max-width: 555px;
+}
+
 .smile__column:first-child {
-  margin-right: 140px;
+  margin-right: 50px;
 }
 
 .smile__label span:before {
@@ -660,7 +682,9 @@ span.underline {
 }
 
 .smile__column2 {
-  width: 90%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 413px;
 }
 
 .smile__bg {
@@ -2441,15 +2465,200 @@ input {
 @media (max-width: 1200px) {
   .container {
     max-width: 970px;
+    margin: 0 auto;
+  }
+  .main__row {
+    display: block;
+  }
+  .main__column {
+    margin: 0 auto;
+    position: static;
+    max-width: 80%;
+  }
+  .main__text {
+    padding-right: 0;
+  }
+  .main__book {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0 30px;
+  }
+  .main__link {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .main__column2 {
+    margin: 0 auto;
+    max-width: 600px;
+    height: 427px;
+  }
+  .main__photo1 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/girl.png") left/contain no-repeat, url("../img/icons/mainGirl.svg") center/contain no-repeat;
+  }
+  .main__girl {
+    display: none;
+  }
+  .form__row {
+    display: block;
+    margin-top: 100px;
+    padding: 0;
+    margin-bottom: 70px;
+  }
+  .form__column {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  .form__column2 {
+    position: static;
+    background: none;
+    margin: 0 96px;
+    max-width: 80%;
+  }
+  .form__input {
+    margin-bottom: 50px;
+  }
+  .form__background {
+    height: 100%;
+  }
+  .form__img {
+    position: static;
+    top: 0;
+    left: 0;
+    background-position: left;
+  }
+  .book__row {
+    padding: 80px 0;
+    display: block;
+  }
+  .book__column {
+    margin-left: 96px;
+    max-width: 80%;
+  }
+  .book__img {
+    margin-top: 50px;
+  }
+  .book__column2 {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  .smile__content {
+    margin: 100px 0 50px;
+  }
+  .smile__row {
+    display: block;
+  }
+  .smile__bg {
+    position: static;
+    background: none;
+  }
+  .smile__img {
+    position: static;
+  }
+  .smile__column:first-child {
+    margin-right: 0px;
+  }
+  .smile__column {
+    margin: 0 96px;
+    max-width: 80%;
+  }
+  .smile__column2 {
+    margin: 0 96px;
+    max-width: 80%;
+  }
+  .smile__btn {
+    margin-bottom: 25px;
+  }
+  .news__btn1 {
+    max-height: 55px;
+    width: 121px;
+  }
+  .faq__label > span:before {
+    content: none;
   }
 }
 @media (max-width: 992px) {
   .container {
-    max-width: 750px;
+    max-width: none;
+  }
+  .doctors__info.info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 26.3157894737%;
+            flex: 1 0 26.3157894737%;
+  }
+  .review__article {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 80%;
+            flex: 1 1 80%;
   }
 }
-@media (max-width: 767px) {
-  .container {
-    max-width: none;
+@media (max-width: 875px) {
+  .header__content {
+    background: none;
+  }
+  .header__menu {
+    display: block;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__book {
+    display: none;
+  }
+  .main__column {
+    max-width: 100%;
+  }
+  .main__title {
+    font-size: 42px;
+  }
+  .label {
+    font-size: 36px;
+  }
+  .main__column {
+    margin: 0 96px;
+    position: static;
+    max-width: 100%;
+  }
+  .form__column {
+    margin: 0 96px;
+    max-width: 100%;
+  }
+  .form__column2 {
+    position: static;
+    background: none;
+    margin: 0 96px;
+    max-width: 100%;
+  }
+  .book__column {
+    margin-left: 96px;
+    max-width: 100%;
+  }
+  .book__column2 {
+    margin: 0 96px;
+    max-width: 100%;
+  }
+  .smile__column {
+    margin: 0 96px;
+    max-width: 100%;
+  }
+  .smile__column2 {
+    margin: 0 96px;
+    max-width: 100%;
+  }
+  .faq__content {
+    width: 100%;
+    padding: 0 96px;
+  }
+  .footer__content {
+    padding: 0 70px;
+  }
+}
+@media (max-width: 844px) {
+  .offers__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
   }
 }
