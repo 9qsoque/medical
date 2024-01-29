@@ -14,33 +14,48 @@
 <body>
   <div class="case">
     <main class="main services">
-      <header class="header services">
-          <div class="header__content services">
-            <div class="header__logo">    
-              <img src="img/icons/group.png" alt="">
-            </div>
-            <nav class="header__nav">
-              <a class="header__items" href="index.html">Home</a>
-              <a class="header__items active" href="services.html">Services</a>
-              <a class="header__items" href="blogs.html">Blogs</a>
-              <a class="header__items" href="about.html">About</a>
-              <a class="header__items" href="contact.html">Contact</a>
-            </nav>
-            <div class="header__book">
-              <div class="header__ava">
-                <a href="login.html">
-                  <img src="img/icons/ava1.png" alt="">
-                </a>
-              </div>
-              <a href="contact.html">
-                <span class="header__btn btn">
-                  <span class="header__button button">Book Now</span>
-                </span>
-              </a>
-            </div>  
+    <header class="header">
+      <div class="container">
+        <div class="header__content services">
+          <div class="header__logo">
+            <img src="img/icons/group.png" alt="">
           </div>
-      </header>
+          <nav class="header__nav">
+            <a class="header__items" href="index.html">Home</a>
+            <a class="header__items active" href="services.html">Services</a>
+            <a class="header__items" href="blogs.html">Blogs</a>
+            <a class="header__items" href="about.html">About</a>
+            <a class="header__items" href="contact.html">Contact</a>
+          </nav>
+          <div class="header__book">
+            <div class="header__ava">
+              <a href="login.html">
+                <img src="img/icons/ava1.png" alt="">
+              </a>
+            </div>
+            <a href="contact.html">
+              <span class="header__btn btn">
+                <span class="header__button button">Book Now</span>
+              </span>
+            </a>
+          </div>
+          <div class="header__menu">
+            <button class="header__burger" >
+              <img src="img/icons/mobileButton.svg" alt="">
+            </button>
+              <div class="header__slide disp">
+                <a class="header__items  block" href="index.html">Home</a>
+                <a class="header__items active block" href="services.html">Services</a>
+                <a class="header__items block" href="blogs.html">Blogs</a>
+                <a class="header__items block" href="about.html">About</a>
+                <a class="header__items block" href="contact.html">Contact</a>           
+              </div>
+          </div>       
+        </div>
+      </div>
+    </header>
       <div class="main__service">
+        <div class="container">        
         <div class="main__content services">
           <div class="main__services">
             <h1 class="main__title services">
@@ -172,6 +187,7 @@
           </div>
         </div>
       </div>
+    </div>      
     </main>
     <div class="smile dark">
       <div class="container service">
@@ -216,7 +232,7 @@
         </div>
       </div>
     </div>
-          <div class="video">
+      <div class="video">
         <div class="container">
           <div class="video__content">
             <h2 class="video__label label">
@@ -227,7 +243,7 @@
             </p>
             <div class="video__video">
               <img class="video__vid" src="img/image3.png" alt="">
-              <!-- <video src="" alt=""></video> -->
+              <img src="img/video.png" alt="" class="video__vidMobile">
             </div>
             <div class="video__playlist">
               <button class="video__btn btn"><span class="video__button button">Watch Playlist</span></button>
@@ -236,7 +252,8 @@
         </div>
       </div>
       <div class="doctors">
-        <div class="doctors__content service">
+        <div class="container">
+        <div class="doctors__content">
           <h2 class="doctors__label label">Meet our <span class="underline">specialists</span></h2>
           <p class="doctors__text text">
             We use only the best quality materials on the market in order to provide the best products to our patients.
@@ -314,13 +331,44 @@
             </div>
             </div>
         </div>
-        </div>
+            <div class="doctors__review mobile">
+              <div class="doctors__info info">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Jim Carry
+                  </div>
+                  <div class="doctors__prof prof">
+                    Orthodontist.
+                  </div>
+                </div>
+              </div>
+              <div class="doctors__info info">
+                <div class="doctors__box">
+                  <div class="doctors__name name">
+                    Wade Warren
+                  </div>
+                  <div class="doctors__prof prof">
+                    Endodontist.
+                  </div>
+                </div>
+              </div>
+              <a href="about.html">
+                <span class="doctors__btn btn">
+                  <span class="doctors__button button">
+                    View all Members
+                  </span>
+                </span>
+              </a>
+            </div>        
+          </div>
       </div>
+    </div>
       <div class="faq">
+        <div class="container">
         <div class="faq__wrapper">
           <div class="faq__content">
             <h2 class="faq__label label">
-              <span class="underline">Frequently Ask Question</span>
+              <span class="underline"><span class="underline">Frequently</span> Ask Question</span>
             </h2>
             <p class="faq__text text">
               We use only the best quality materials on the market in order to provide the best products to our patients.
@@ -353,9 +401,10 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
       <div class="website">
-        <!-- <div class="container"> -->
+        <div class="container">
           <div class="website__content">
             <div class="website__row">
               <div class="website__column">
@@ -375,14 +424,17 @@
               </div>
               <div class="website__column2">
                 <div class="website__img">
+                  <!-- <img src="img/img.png" alt=""> -->
                 </div>
               </div>
             </div>
           </div>
-        <!-- </div> -->
+        </div>
       </div>
-      <footer class="footer">
-        <div class="footer__content service">
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
           <div class="footer__info">
             <div class="footer__logo">
               <img src="img/icons/group.png" alt="">
@@ -418,7 +470,54 @@
             </div>
           </div>
         </div>
-      </footer>
+        </div>
+    </footer>
+    <footer class="mobile__footer">
+      <div class="container">
+        <div class="mobile__content">
+          <div class="mobile__burger">
+            <div class="mobile__logo">
+              <img src="img/icons/mobileLogo.svg" alt="">
+            </div>
+            <div class="header__menu">
+              <button class="header__burger mobile__bur" >
+                <img src="img/icons/mobileBurger.svg" alt="">
+              </button>
+              <div class="header__slide mobile__sl dis">
+                <a class="header__items active block" href="index.html">Home</a>
+                <a class="header__items block" href="services.html">Services</a>
+                <a class="header__items block" href="blogs.html">Blogs</a>
+                <a class="header__items block" href="about.html">About</a>
+                <a class="header__items block" href="contact.html">Contact</a>           
+              </div>
+          </div>
+          </div>
+          <p class="mobile__text text">
+            All our PRO level features at your fingertips.
+          </p>
+          <p class="mobile__follow">
+            Follow us on
+          </p>
+          <div class="mobile__links">
+            <a href="#">
+            <img class="mobile__icn" src="img/icons/mobileFacebook.png" alt="">
+            </a>
+            <a href="">
+              <img class="mobile__icn" src="img/icons/mobileInsta.png">
+            </a>
+            <a href="">
+              <img class="mobile__icn" src="img/icons/mobileTwitter.png">
+            </a>
+            <a href="">
+              <img class="mobile__icn" src="img/icons/mobileLink.png">
+            </a>
+          </div>
+          <div class="mobile__end">
+            <p>Uifry by M.Aze, CopyRights are protected by Uifry</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js" defer></script>
