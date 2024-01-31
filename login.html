@@ -15,6 +15,7 @@
   <div class="case login">
     <main class="main services login">
       <header class="header services login">
+        <div class="container">
           <div class="header__content services login">
             <div class="header__logo">    
               <img src="img/icons/group.png" alt="">
@@ -37,57 +38,75 @@
                   <span class="header__button button">Sign up</span>
                 </span>
               </a>
-            </div>  
+            </div>
+          <div class="header__menu">
+            <button class="header__burger" >
+              <img src="img/icons/mobileButton.svg" alt="">
+            </button>
+              <div class="header__slide disp">
+                <a class="header__items block" href="index.html">Home</a>
+                <a class="header__items block" href="services.html">Services</a>
+                <a class="header__items block" href="blogs.html">Blogs</a>
+                <a class="header__items block" href="about.html">About</a>
+                <a class="header__items block" href="contact.html">Contact</a>
+                <a class="header__items active block" href="login.html">Login</a>                           
+              </div>
+             </div>             
           </div>
+        </div>
       </header>
     </main>
-      <div class="login__case">
-        <div class="login__row">
-            <div class="login__img">
-                <div class="login__quote">
-                    <p>
-                        <q>For there was never yet philosopher, That could endure the toothache patiently</q>
-                    </p>
-                    <p>
-                        <cite>~ Dr Dre Andre Romelle</cite>
-                    </p>
-                    <p>
-                        <span>Founder of Smile Pvt.Ltd</span>
-                    </p>
+    <div class="login__case">
+        <div class="container">
+            <div class="login__row">
+                <div class="login__img">
+                    <div class="login__quote">
+                        <p>
+                            <q>For there was never yet philosopher, That could endure the toothache patiently</q>
+                        </p>
+                        <p>
+                            <cite>~ Dr Dre Andre Romelle</cite>
+                        </p>
+                        <p>
+                            <span>Founder of Smile Pvt.Ltd</span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <form class="login__form" action="#">
-                <h2 class="login__label label">Welcome Back</h2>
-                <p class="login__text">Discover a better way of spandings with Uifry.</p>
-                <div class="login__container">
-                <a class="login__google" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj9k-vMhueDAxUdxKACHVK0Dj8QFnoECBgQAQ&url=https%3A%2F%2Faccounts.google.com%2FServiceLogin%3Fhl%3Dru&usg=AOvVaw2d9jU-cGO6dvRXIxFbKlUr&opi=89978449">
-                    <span>Log in with Google</span>
-                </a>
-                </div>
-                <p class="login__or text">Or</p>
-                <input type="email" placeholder="Enter your Email" name="uname" required class="form__input login mail">
-                <input type="password" placeholder="Password" name="psw" required class="form__input login pass">
-                <div class="login__me">
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                    <a href="#">
-                        <span class="psw">Forget password?</span>
+                <form class="login__form" action="#">
+                    <h2 class="login__label label">Welcome Back</h2>
+                    <p class="login__text">Discover a better way of spandings with Uifry.</p>
+                    <div class="login__container">
+                    <a class="login__google" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj9k-vMhueDAxUdxKACHVK0Dj8QFnoECBgQAQ&url=https%3A%2F%2Faccounts.google.com%2FServiceLogin%3Fhl%3Dru&usg=AOvVaw2d9jU-cGO6dvRXIxFbKlUr&opi=89978449">
+                        <span>Log in with Google</span>
                     </a>
-                </div>
-                <button class="login__btn btn">
-                    <span class="login__button button">Log In</span>
-                </button>
-                <div class="login__create">
-                    <p>Not member yet?
-                        <a href="sign.html"><span>Create an account</span>
+                    </div>
+                    <p class="login__or text"><span>Or</span></p>
+                    <input type="email" placeholder="Enter your Email" name="uname" required class="form__input login mail">
+                    <input type="password" placeholder="Password" name="psw" required class="form__input login pass">
+                    <div class="login__me">
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                        <a href="#">
+                            <span class="psw">Forget password?</span>
                         </a>
-                    </p>
-                </div>
-            </form>
-          </div>    
-      </div>
+                    </div>
+                    <button class="login__btn btn">
+                        <span class="login__button button">Log In</span>
+                    </button>
+                    <div class="login__create">
+                        <p>Not member yet?
+                            <a href="sign.html"><span>Create an account</span>
+                            </a>
+                        </p>
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </div>
 </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
 

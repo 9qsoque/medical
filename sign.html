@@ -9,12 +9,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />             
 </head>
 <body>
   <div class="case login">
     <main class="main services login">
       <header class="header services login">
+        <div class="container">
           <div class="header__content services login">
             <div class="header__logo">    
               <img src="img/icons/group.png" alt="">
@@ -37,11 +38,26 @@
                   <span class="header__button button">Sign up</span>
                 </span>
               </a>
-            </div>  
+            </div>
+            <div class="header__menu">
+            <button class="header__burger" >
+              <img src="img/icons/mobileButton.svg" alt="">
+            </button>
+              <div class="header__slide disp">
+                <a class="header__items block" href="index.html">Home</a>
+                <a class="header__items block" href="services.html">Services</a>
+                <a class="header__items block" href="blogs.html">Blogs</a>
+                <a class="header__items block" href="about.html">About</a>
+                <a class="header__items block" href="contact.html">Contact</a>
+                <a class="header__items active block" href="login.html">Login</a>                           
+              </div>
+            </div>             
+          </div>             
           </div>
       </header>
     </main>
       <div class="login__case">
+        <div class="container">
         <div class="login__row">
             <div class="login__img sign">
                 <div class="login__quote">
@@ -64,7 +80,7 @@
                     <span>Log in with Google</span>
                 </a>
                 </div>
-                <p class="login__or text">Or</p>
+                <p class="login__or text"><span>Or</span></p>
                 <input type="password" placeholder="Type your name" name="username" required class="form__input login username">
                 <input type="email" placeholder="Enter your Email" name="uname" required class="form__input login mail sign">
                 <input type="password" placeholder="Password" name="psw" required class="form__input login pass">
@@ -83,10 +99,13 @@
                     </p>
                 </div>
             </form>
-          </div>    
-      </div>
+        </div>    
+        </div>
+    </div>
 </div>
 </body>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
 </html>
 
 

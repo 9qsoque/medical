@@ -34,7 +34,7 @@
     });
       var swiper = new Swiper(".mySwiperBlogs", {
                   rewind: true,
-      slidesPerView: 3,
+      slidesPerView: 3.1,
             navigation: {
         nextEl: ".swiper-button-next-rev",
         prevEl: ".swiper-button-prev-rev",
@@ -83,6 +83,15 @@
             navigation: {
         nextEl: ".swiper-button-next-news",
         prevEl: ".swiper-button-prev-news",
+      },
+      allowTouchMove:false
+    });      
+      var swiper = new Swiper(".mySwiperOfferAbout", {
+                  rewind: true,
+      slidesPerView: 1,
+            navigation: {
+        nextEl: ".swiper-button-next-about",
+        prevEl: ".swiper-button-prev-about",
       },
       allowTouchMove:false
     });      
