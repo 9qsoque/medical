@@ -3141,10 +3141,8 @@ input {
   .offers__content.home {
     display: none;
   }
-  .offers__column.swiper-slide:first-child {
-    height: 100%;
-  }
   .offers__column.swiper-slide {
+    height: auto;
     -webkit-box-flex: 1;
         -ms-flex: 1 1;
             flex: 1 1;

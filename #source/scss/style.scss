@@ -2649,10 +2649,11 @@ letter-spacing: 0.24px;
 	.offers__content.home{
 		display: none;
 	}
-	.offers__column.swiper-slide:first-child{
-		height: 100%;
-	}
+	// .offers__column.swiper-slide:first-child{
+	// 	height: 100%;
+	// }
 	.offers__column.swiper-slide {
+		height: auto;
 		flex: 1 1;
 		border-radius: 10px;
 		max-height: 300px;
